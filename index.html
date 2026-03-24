@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png" />
+    <link rel="stylesheet" href="style/css/main.css" />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="blue-background"></div>
+
+    <main>
+      <h1>IP Address Tracker</h1>
+      <form action="">
+        <input
+          type="text"
+          required
+          name="ip_addredd"
+          placeholder="Search for any IP address or domain"
+        />
+        <button type="submit">
+          <img
+            src="images/icon-arrow.svg"
+            alt="arrow icon used to search for the ip address"
+          />
+        </button>
+      </form>
+
+      <section id="ip-data">
+        <div class="loading"></div>
+        <article>
+          <h2>ip address</h2>
+          <p id="ip-address"></p>
+        </article>
+        <article>
+          <h2>location</h2>
+          <p id="location"></p>
+        </article>
+        <article>
+          <h2>timezone</h2>
+          <p id="timezone"></p>
+        </article>
+        <article>
+          <h2>isp</h2>
+          <p id="isp"></p>
+        </article>
+      </section>
+    </main>
+
+    <div id="map"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://mahmoudessam16.github.io/Main-portfolio/" target="_blank"
+        >Mahmoud Essam</a
+      >.
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
