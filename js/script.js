@@ -73,7 +73,7 @@ function updateUI(data) {
 var map = L.map("map").setView([30.0444, 31.2357], 13);
 
 var blackLocationIcon = L.icon({
-  iconUrl: "./images/icon-location.svg",
+  iconUrl: "images/icon-location.svg",
   iconSize: [40, 55],
   iconAnchor: [22, 55],
 });
